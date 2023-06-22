@@ -6,7 +6,7 @@ resources:
 
 images:
 - name: asia.gcr.io/poc-innovation-iot/galgal-user-consumer
-  newTag: cf7c8d0f
+  newTag: ea26630f
 - name: asia.gcr.io/poc-innovation-iot/training-galgal/galgal-user-consumer
   newTag: v1.4
 
