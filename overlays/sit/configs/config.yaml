@@ -30,6 +30,7 @@ kafka:
   address:
     - kafka.poc.internal:9092
   topic: gal-topic
+  consume-group: consumer-group
 
 user-list-key: USER_LIST
 # secrets:

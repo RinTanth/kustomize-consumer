@@ -54,8 +54,9 @@ spec:
               memory: 256Mi
           volumeMounts:
             - name: galgal-user-consumer-configmap-file
-              mountPath: /configs/config.yaml
-              subPath: config.yaml
+              mountPath: /config
+              readOnly: true
+              # subPath: config.yaml
 
       volumes:
         - name: galgal-user-consumer-configmap-file
