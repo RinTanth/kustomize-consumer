@@ -5,7 +5,7 @@ resources:
   - ../../base
 
 images:
-  - name: asia.gcr.io/poc-innovation-iot/training-kube/galgal-user-consumer
+  - name: asia.gcr.io/poc-innovation-iot/training-galgal/galgal-user-consumer
     newTag: v1.4
 
 configMapGenerator:
