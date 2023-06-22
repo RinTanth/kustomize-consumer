@@ -4,13 +4,13 @@ resources:
   - resources/deployment.yaml
   - resources/service.yaml
 configMapGenerator:
-  - name: example-app-configmap-env
+  - name: galgal-user-consumer-configmap-env
     envs:
       - configs/config.env
-  - name: example-app-configmap-file
+  - name: galgal-user-consumer-configmap-file
     files:
       - configs/config.yaml
 secretGenerator:
-  - name: example-app-secret-env
+  - name: galgal-user-consumer-secret-env
     envs:
       - secrets/secret.env
