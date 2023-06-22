@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: galgal-user-consumer
-          image: asia.gcr.io/poc-innovation-iot/training-galgal/galgal-user-consumer:TAG
+          image: asia.gcr.io/poc-innovation-iot/galgal-user-consumer:TAG
           imagePullPolicy: IfNotPresent
           envFrom:
             - configMapRef:
@@ -29,19 +29,19 @@ spec:
                 name: galgal-user-consumer-secret-env
           ports:
             - name: http
-              containerPort: 8081
+              containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
-              port: 8081
+              path: /health
+              port: 8080
             timeoutSeconds: 10
             initialDelaySeconds: 10
             periodSeconds: 20
           readinessProbe:
             httpGet:
-              path: /
-              port: 8081
+              path: /health
+              port: 8080
             timeoutSeconds: 10
             initialDelaySeconds: 10
             periodSeconds: 15
