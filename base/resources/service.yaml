@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/name: galgal-user-consumer
     app.kubernetes.io/instance: galgal-user-consumer
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
     - port: 8080
       targetPort: http
